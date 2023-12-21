@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth scroll-my-0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Web Developer</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-gray-900 text-white">
+  <!-- Header -->
+  <nav class="bg-black px-2 py-3 flex flex-col sm:flex-row sm:items-center justify-between sticky top-0 z-10">
+      <span class="sm:text-4xl text-3xl font-bold sm:mx-5">Dev<span class="text-teal-300 font-serif">Zone</span></span>
+      <ul class="flex flex-col sm:flex-row sm:space-x-2 text-xl items-center font-mono font-bold cursor-pointer md:px-20 transition-all delay-800 ease-linear">
+        <div class="hidden sm:flex flex-row">
+            <a href="#home"><li class="md:px-4 px-2 hover:text-teal-400">Home</li></a> 
+            <a href="#about"> <li class="md:px-4 px-2 hover:text-teal-400">About</li></a>
+            <a href="#services"><li class="md:px-4 px-2 hover:text-teal-400">Services</li></a>
+            <a href="#contact"><li class="md:px-4 px-2 hover:text-teal-400">Contact</li></a>
+
+        </div>
+        <div class="sm:hidden hidden absolute top-43 h-[35vh] w-full bg-gray-800  py-6 px-3" id="mobile-menu">
+            <a href="#home"><li class="md:px-4 px-2 hover:text-teal-400">Home</li></a> 
+            <a href="#about"> <li class="md:px-4 px-2 hover:text-teal-400">About</li></a>
+            <a href="#services"><li class="md:px-4 px-2 hover:text-teal-400">Services</li></a>
+            <a href="#contact"><li class="md:px-4 px-2 hover:text-teal-400">Contact</li></a>
+
+        </div>
+    </ul>
+    <button type="button" id="btn" class="absolute right-4 ring-2 sm:hidden w-1/5 hover:bg-teal-500 hover:text-black font-bold ring-teal-500 p-1 rounded-md mx-1">Menu</button>
+
+
+  </nav>
+
+
+  
+
+  <!-- Home Section -->
+  <section class="flex items-center justify-between flex-col-reverse lg:flex-row lg:py-10" id="home">
+    <div class="main lg:h-auto md:px-10 lg:px-3 px-4 font-serif md:w-2/3  flex flex-col items-center">
+        <h1 class="text-4xl text-center md:text-5xl text-teal-400 font-extrabold">We Our <span id="element" class="text-gray-300"></span></h1>
+        <p class="py-6 xl:w-3/4 w-full md:text-center text-justify text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut fugit nostrum animi ipsam consequuntur, commodi dolore delectus. Ratione, iste est sit nesciunt, minus impedit soluta reiciendis officiis exercitationem perferendis quia et aliquam eum mollitia, velit dolorem dolores debitis consequatur fuga.</p>
+        <div class="space-x-4 text-xl py-5">
+            <a href="#contact"><button class="bg-gray-700 hover:bg-slate-800 focus:bg-slate-800 hover:ring-2 hover:ring-teal-500 p-4 rounded-md" >Contact</button></a>
+            <a href="#subscribe"> <button class="bg-gray-700 hover:bg-slate-800 focus:bg-slate-800 hover:ring-2 hover:ring-teal-500 p-4 rounded-md">Subscribe</button> </a>
+        </div>
+    </div>
+    <div class="image  flex justify-center items-center md:pt-20">
+    <img src="https://freepngimg.com/thumb/web_design/31748-9-coder-transparent.png" alt="computer-img" class="w-2/3 rounded-md my-20">
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="bg-gray-700 h-auto py-4 md:px-5" id="about">
+    <div class="text-center py-7">
+        <h1 class="text-4xl md:text-6xl font-bold text-slate-300 font-serif">About</h1>
+    </div>
+    <div class="flex flex-col lg:flex-row items-center justify-center">
+       <img src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1060&t=st=1702742994~exp=1702743594~hmac=b25be3b4dd2d6c72f886cbab07c493c727b810762d3b96e95fd1b794ebe2d26b" alt="img" class="bg-slate-100  rounded-full sm:h-80 sm:w-80 h-60 w-60">
+       <div class="content lg:w-2/4 items-center md:mx-5 my-10 flex flex-col lg:justify-end lg:items-end">
+         <h2 class="text-3xl font-bold md:text-4xl md:font-extrabold font-serif text-teal-500">Hello Everyone !!</h2>
+         <p class="text-xl my-3 w-3/4 text-justify font-serif">I am dolor sit amet consectetur, adipisicing elit. Culpa libero suscipit unde sit nulla animi deserunt temporibus, expedita, asperiores rem quis. Optio nostrum culpa aliquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempore fuga in repellendus doloribus! Distinctio ex magni culpa corrupti in?</p>
+         <p class="text-xl my-3 w-3/4 text-justify font-serif">This is ipsum dolor sit amet consectetur, adipisicing elit. Culpa libero suscipit unde sit nulla animi deserunt temporibus, expedita, asperiores rem quis. Optio nostrum culpa aliquam? Lorem ipsum dolor sit amet.</p>
+       </div>
+    </div>
+</section>
+
+<section id="services" class="bg-slate-800 flex flex-col md:justify-between md:items-center h-auto py-4 px-5">
+    <div class="max-w-7xl flex flex-col xl:flex-row md:items-center md:justify-center lg:m-auto my-10">
+    <div class="py-7 lg:w-2/4 lg:text-justify sm:text-center space-y-2">
+        <h1 class="text-4xl md:text-6xl font-bold text-slate-300 font-serif">Services</h1>
+        <h3 class="md:text-xl text-lg font-bold text-teal-500">What we are providing??</h3>
+        <p class="md:text-xl text-lg text-start font-mono">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius molestiae perspiciatis enim autem quidem voluptates, repellendus quibusdam cumque quisquam animi?</p>
+    </div>
+    <div class="cards md:w-7/12 mx-3 my-10 md:mx-5">
+          <!-- Slider main container -->
+    <div class="swiper rounded-md">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <img src="https://img.freepik.com/free-vector/illustration-web-design_53876-18157.jpg?w=1380&t=st=1702744465~exp=1702745065~hmac=8bbb1a3c6760fcd51116d40464b862ab1a64ecc73f9bee6863fc6568e85c356f" alt="img1" class="md:mx-2 lg:h-96 md:h-72 h-60">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://img.freepik.com/free-vector/website-development-banner_33099-1687.jpg?w=1060&t=st=1702749032~exp=1702749632~hmac=0ee624668353476b15558e5d365eb95310d18192afb56f2987e94708c2f7b789" alt="img2" class="md:mx-2 lg:h-96 md:h-72 h-60">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://img.freepik.com/free-photo/web-design-concept-with-drawings_1134-77.jpg?t=st=1702744456~exp=1702745056~hmac=af84dee00e620406493473c567af561165ceab372cddd10a4c15299f4a3879bd" alt="img3" class="md:mx-2 lg:h-96 md:h-72 h-60">
+            </div>
+        </div>
+        
+    </div>
+</div>
+</div>
+</section>
+
+<!-- Testimonials -->
+<section class="bg-black h-auto py-4 px-5" id="testimonials">
+    <div class="text-center py-7">
+        <h1 class="text-4xl md:text-6xl font-bold text-slate-300 font-serif">Testimonials</h1>
+    </div>
+    <div class="swiper-test rounded-md my-9 lg:w-3/4 m-auto lg:py-40 md:py-20">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper py-30 font-mono">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <p class="rounded-md bg-slate-800 px-1 md:px-5 py-10 mx-6 text-center text-sm md:text-xl h-2/3">There services are really good!! consectetur adipisicing elit. Deserunt placeat repellat dolore eaque? Enim odio obcaecati, ex quidem deserunt eum est ratione pariatur asperiores tenetur nam veritatis? Ducimus, voluptatem quaerat? ex quidem deserunt eum est ratione pariatur </p>
+                <div class="userDtl text-md font-serif">
+                    <img src="https://img.freepik.com/free-photo/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair_285396-896.jpg?w=1060&t=st=1702750841~exp=1702751441~hmac=66da4b80c20c9909bb7b908c200bf434f2f3fc954b44075ac689a9fa4f1a78cd" alt="user1" class="h-14 w-14 rounded-full text-center my-3">
+                    <h4 class="font-bold ">Nina</h4>
+                    <i>- Xyz Company</i>
+                </div>
+            </div>
+            <div class="swiper-slide ">
+                <p class="rounded-md bg-slate-800 px-1 md:px-5 py-10 mx-6 text-center text-sm md:text-xl h-2/3">I happy how they deliverd project on time, consectetur adipisicing elit. Deserunt placeat repellat dolore eaque? Enim odio obcaecati, ex quidem deserunt eum est ratione pariatur asperiores tenetur nam veritatis? Ducimus, voluptatem Lorem ipsum dolor sit amet consectetur. quaerat?</p>
+                <div class="userDtl text-md font-serif">
+                    <img src="https://img.freepik.com/free-photo/portrait-successful-man-having-stubble-posing-with-broad-smile-keeping-arms-folded_171337-1267.jpg?w=1060&t=st=1702752126~exp=1702752726~hmac=8e4aa29da86764aa3c75712281afa7d21715dc287420ec287598a92380ae2ee9" alt="user1" class="h-14 w-14 rounded-full text-center my-3">
+                    <h4 class="font-bold ">Thomas</h4>
+                    <i>- Inventer Mania</i>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <p class="rounded-md bg-slate-800 px-1 md:px-5 py-10 mx-6 text-center text-sm md:text-xl h-2/3">I love there work there dedication how like it! ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat repellat dolore eaque? Enim odio obcaecati, ex quidem deserunt eum est ratione pariatur asperiores tenetur nam veritatis? Ducimus, voluptatem quaerat?
+
+                </p>
+                <div class="userDtl text-md font-serif">
+                    <img src="https://img.freepik.com/free-photo/portrait-happy-male-with-broad-smile_176532-8175.jpg?w=1060&t=st=1702752083~exp=1702752683~hmac=b151a791da7910766354f36ed01243293a9d0436c4dd8ba1976fc211df50ac24" alt="user1" class="h-14 w-14 rounded-full text-center my-3">
+                    <h4 class="font-bold ">Krish</h4>
+                    <i>- CEO At AbC</i>
+                </div>
+            </div>
+            <!-- If we need pagination
+           <div class="swiper-pagination -bottom-12"></div>
+
+            <div class="swiper-scrollbar bg-red-600"></div> -->
+        </div>
+
+    </div>
+</section>
+
+<!-- Contact Us SEction -->
+<section class="contact max-w-6xl lg:m-auto md:py-40 flex flex-col md:flex-row justify-between" id="contact">
+     <div class="heading md:py-40 py-10 px-2 md:w-2/4 md:text-justify space-y-2 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold text-slate-300 font-serif">Contact Us</h1>
+        <p class="text text-lg md:px-4 font-bold text-teal-500">Wanna Contact Me, Join Me Then!!</p>
+        <div class="icons space-x-4 md:text-3xl px-6 py-7 cursor-pointer">
+            <i class="fa-brands fa-facebook rounded-full border-2 border-teal-500 p-3 hover:scale-110 hover:shadow-md hover:shadow-slate-200/75 hover:bg-gray-800 hover:text-teal-400 hover:rotate-12"></i>
+            <i class="fa-brands fa-whatsapp rounded-full border-2 border-teal-500 p-3 hover:scale-110 hover:shadow-md hover:shadow-slate-200/75 hover:bg-gray-800 hover:text-teal-400 hover:rotate-12"></i>
+            <i class="fa-brands fa-linkedin rounded-full border-2 border-teal-500 p-3 hover:scale-110 hover:shadow-md hover:shadow-slate-200/75 hover:bg-gray-800 hover:text-teal-400 hover:rotate-12"></i>
+            <i class="fa-brands fa-x-twitter rounded-full border-2 border-teal-500 p-3 hover:scale-110 hover:shadow-md hover:shadow-slate-200/75 hover:bg-gray-800 hover:text-teal-400 hover:rotate-12"></i>
+        </div>
+     </div>
+     <div class="rightside md:w-2/4 bg-gray-800 h-auto px-10 py-6 rounded-xl space-x-4 space-y-5 flex flex-col justify-center font-serif text-xl sm:mx-2">
+        <div class="fields w-full space-y-5 flex flex-col">
+        <input type="text" placeholder="Enter Your Name" class="rounded-lg bg-gray-600 py-4 px-3 hover:ring-white hover:ring-2 outline-none hover:bg-gray-900 focus:bg-gray-900">
+        <input type="email" placeholder="Enter Your Email" class="rounded-lg bg-gray-600 py-4 px-3 hover:ring-white hover:ring-2 outline-none hover:bg-gray-900 focus:bg-gray-900">
+         <textarea name="message" id="msg" placeholder="Enter your Message..." rows="7" class="rounded-lg bg-gray-600 py-4 px-3 hover:ring-white hover:ring-2 outline-none hover:bg-gray-900 focus:bg-gray-900"></textarea>
+        </div>
+        <div class="btns">
+            <button class="bg-teal-500 p-3 w-full rounded-full text-xl text-black font-bold hover:bg-gray-900 hover:text-white hover:ring-1 hover:ring-teal-400">Send</button>
+        </div>
+     </div>
+</section>
+
+<footer id="footer" class="bg-black py-20 h-auto relative">
+    <div class="flex flex-col md:flex-row justify-evenly  max-w-6xl text-2xl space-x-6">
+        <div class="logo md:w-1/4 text-center">
+            <span class="sm:text-4xl lg:text-5xl text-3xl font-bold sm:mx-5 ">Dev<span class="text-teal-300 font-serif">Zone</span></span>
+            <p class="text-lg md:text-sm px-6 py-2 text-justify">DevZone is a Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus beatae neque expedita libero ipsum ex quis aut quas autem dolore.</p>
+            <div class="icons space-x-2 text-xl px-6 py-7 cursor-pointer">
+                <i class="fa-brands fa-facebook rounded-full border-2 border-teal-500 p-3 hover:scale-110 hover:shadow-md hover:shadow-slate-200/75 hover:bg-gray-800 hover:text-teal-400 hover:rotate-12 sm:my-2"></i>
+                <i class="fa-brands fa-whatsapp rounded-full border-2 border-teal-500 p-3 hover:scale-110 hover:shadow-md hover:shadow-slate-200/75 hover:bg-gray-800 hover:text-teal-400 hover:rotate-12 sm:my-2 sm:mx-2"></i>
+                <i class="fa-brands fa-linkedin rounded-full border-2 border-teal-500 p-3 hover:scale-110 hover:shadow-md hover:shadow-slate-200/75 hover:bg-gray-800 hover:text-teal-400 hover:rotate-12 sm:my-2 sm:mx-2"></i>
+                <i class="fa-brands fa-x-twitter rounded-full border-2 border-teal-500 p-3 hover:scale-110 hover:shadow-md hover:shadow-slate-200/75 hover:bg-gray-800 hover:text-teal-400 hover:rotate-12 sm:my-2"></i>
+            </div>
+        </div>
+        <div class="center w-2/4 md:w-1/4">
+            <h2 class="text-3xl font-bold font-serif">Pages</h2>
+            <ul class="text-xl list-disc py-4 font-mono px-6">
+                <a href="#home" class="hover:text-teal-500 hover:font-bold hover:scale-110">
+                    <li class="hover:scale-105">Home</li>
+                </a>
+                <a href="#about"  class="hover:text-teal-500 hover:font-bold hover:scale-110">
+                    <li class="hover:scale-105">About</li>
+                </a>
+                <a href="#services"  class="hover:text-teal-500 hover:font-bold hover:scale-110">
+                    <li class="hover:scale-105">Services</li>
+                </a>
+                <a href="#testimonials"  class="hover:text-teal-500 hover:font-bold hover:scale-110">
+                    <li class="hover:scale-105">Testimonials</li>
+                </a>
+                <a href="#contact"  class="hover:text-teal-500 hover:font-bold">
+                    <li class="hover:scale-105">Contact Us</li>
+                </a>
+            </ul>
+        </div>
+        <div class="right w-2/4 md:w-1/4">
+            <h2 class="text-3xl font-bold font-serif">Services</h2>
+            <ul class="text-xl list-disc py-4 font-mono px-6">
+                <a href="#"  class="hover:text-teal-500 hover:font-bold hover:scale-110">
+                    <li class="hover:scale-105">SEO</li>
+                </a>
+                <a href="#"  class="hover:text-teal-500 hover:font-bold hover:scale-110">
+                    <li class="hover:scale-105">Web Design</li>
+                </a>
+                <a href="#" class="hover:text-teal-500 hover:font-bold hover:scale-110">
+                    <li class="hover:scale-105">Web Developing</li>
+                </a>
+                <a href="#"  class="hover:text-teal-500 hover:font-bold hover:scale-110">
+                    <li class="hover:scale-105">Software Developing</li>
+                </a>
+              
+            </ul>
+        </div>
+
+ 
+    </div>
+    <div class="subscribe space-y-10 py-10 relative flex flex-col items-center justify-center font-serif max-w-2xl m-auto" id="subscribe">
+        <h2 class="text-3xl md:text-4xl font-bold font-serif text-teal-500">Subscribe</h2>
+
+        <input type="email" placeholder="Enter your Email" class="outline-none h-16 w-3/4 rounded-full px-3 py-4 bg-gray-700 sm:text-xl text-sm hover:bg-gray-900 focus:bg-gray-900 hover:ring-white hover:ring-1">
+        <button class="bg-teal-500 absolute right-4 bottom-10 rounded-full text-black sm:px-3 py-3 h-16 w-1/4 sm:text-lg text-sm font-bold hover:bg-gray-900 hover:text-white hover:ring-1 hover:ring-teal-500">Subscribe</button>
+    </div>
+    <div class="copyright bg-gray-800 absolute text-center text-xl font-serif w-full bottom-0 py-4">
+        <p>Copyright &copy; 2024</p>
+    </div>
+</footer>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+// Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 2,
+    autoplay: {
+    delay: 3000,
+    },
+ effect: 'coverflow',
+  coverflowEffect: {
+    rotate: 30,
+    depth: 80,
+    slideShadows: false,
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+    //   spaceBetween: 20,
+
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 1,
+      effect: 'fade',
+      fadeEffect: {
+       crossFade: true
+      },
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 40
+    }
+  },
+// effect: 'creative',
+//   creativeEffect: {
+//     prev: {
+//       // will set `translateZ(-400px)` on previous slides
+//       translate: [-20, 50, -400],
+//     },
+//     next: {
+//       // will set `translateX(100%)` on next slides
+//       translate: ['100%', 0, 0],
+//     },
+//   },
+// effect: 'cube',
+// cubeEffect: {
+// slideShadows: true,
+// },
+// If we need pagination
+    pagination: {
+    el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+    el: '.swiper-scrollbar',
+    },
+    });
+
+    const swiper2 = new Swiper('.swiper-test', {
+// Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 2,
+    autoplay: {
+    delay: 5000,
+    },
+
+effect: 'creative',
+  creativeEffect: {
+    prev: {
+      // will set `translateZ(-400px)` on previous slides
+      translate: [100, 400, -900],
+      scale: 0.5,
+    },
+    next: {
+      // will set `translateX(100%)` on next slides
+      translate: ['100%', 0, 0],
+      scale: 1.1,
+    },
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      effect: 'flip',
+  flipEffect: {
+    slideShadows: false,
+  },
+    //   spaceBetween: 20,
+
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 1,
+      effect: 'flip',
+  flipEffect: {
+    slideShadows: false,
+  },
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+      effect: 'creative',
+  creativeEffect: {
+    prev: {
+      // will set `translateZ(-400px)` on previous slides
+      translate: [0, 0, -400],
+      scale: 0.5,
+    },
+    next: {
+      // will set `translateX(100%)` on next slides
+      translate: ['100%', 0, 0],
+      scale: 1.1,
+    },
+  },
+      
+    }
+  },
+
+// If we need pagination
+    pagination: {
+    el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+    el: '.swiper-scrollbar',
+    },
+    });
+
+</script>
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer!', 'Designer!', 'Best!!'],
+      typeSpeed: 100,
+	  loop: true,
+      backSpeed: 80,
+      backDelay: 1500,
+	//   cursorChar: '✏️',
+	  smartBackspace: true,
+    });
+
+    // menu menu script
+  const btn = document.getElementById('btn');
+  btn.addEventListener('click', () => {
+     const menu = document.getElementById('mobile-menu');
+     if(!menu.classList.contains('sm:hidden')){
+         menu.classList.toggle('sm:hidden');
+
+     } else{
+        menu.classList.toggle('hidden');
+
+     }
+
+    //  console.log(menu);
+  })
+
+  </script>
+    
+</body>
+</html> 
